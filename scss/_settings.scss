@@ -1,0 +1,234 @@
+// color
+$theme: #194056;
+//polices
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+/**
+Thin 100
+Extra-light 200
+Light 300
+Regular 400
+Medium 500
+Semi-bold 600
+Bold 700
+Extra-bold 800
+Black 900
+**/
+.body {
+  margin: 0 auto;
+  padding: 0 auto;
+  width: 100%;
+  height: 100%;
+
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+* {
+  outline: none;
+  scroll-behavior: smooth;
+}
+
+// scroll bar
+
+/*** scroollbar ***/
+*::-webkit-scrollbar {
+  width: 0px;
+  background: rgba(0, 0, 0, 0) 0% 0% no-repeat padding-box;
+}
+
+*::-webkit-scrollbar-button {
+  background: rbga(0, 0, 0, 0);
+}
+
+*::-webkit-scrollbar-track-piece {
+  width: 0px;
+}
+
+*::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 1);
+  border: none;
+  width: 0px;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+//link init
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+
+  :hover {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  background: #414141;
+}
+
+.emoji_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    margin-left: 8px;
+    margin-right: 8px;
+
+    &:nth-child(1) {
+      background: linear-gradient(
+        25deg,
+        rgba(122, 72, 51, 1) 0%,
+        rgba(255, 60, 39, 1) 0%,
+        rgba(255, 130, 84, 1) 100%
+      );
+    }
+    &:nth-child(2) {
+      background: linear-gradient(
+        6deg,
+        rgba(122, 72, 51, 1) 0%,
+        rgba(255, 86, 40, 1) 0%,
+        rgba(255, 176, 84, 1) 100%
+      );
+    }
+    &:nth-child(3) {
+      background: linear-gradient(
+        6deg,
+        rgba(122, 72, 51, 1) 0%,
+        rgba(255, 170, 63, 1) 0%,
+        rgba(255, 210, 125, 1) 100%
+      );
+    }
+    &:nth-child(4) {
+      background: linear-gradient(
+        6deg,
+        rgba(122, 72, 51, 1) 0%,
+        rgba(255, 196, 40, 1) 0%,
+        rgba(255, 226, 83, 1) 100%
+      );
+    }
+    &:nth-child(5) {
+      background: linear-gradient(
+        6deg,
+        rgba(122, 72, 51, 1) 0%,
+        rgba(255, 231, 49, 1) 0%,
+        rgba(255, 243, 106, 1) 100%
+      );
+    }
+
+    .face {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 65%;
+      position: relative;
+      left: 4px;
+      transition: 0.3s;
+      .eyes {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        .eye {
+          width: 8px;
+          height: 8px;
+          border-radius: 50%;
+          background: #00232b;
+          position: relative;
+          animation: cligniote 3s linear infinite;
+        }
+
+        .sousil_left::after {
+          content: " ";
+          width: 12px;
+          height: 4px;
+          background: #00232b;
+          position: absolute;
+          top: -6px;
+        }
+        .sousil_right::after {
+          content: " ";
+          width: 12px;
+          height: 4px;
+          background: #00232b;
+          position: absolute;
+          top: -6px;
+        }
+
+        .sousil_left_r::after {
+          transform: rotate(12deg);
+        }
+        .sousil_right_r::after {
+          transform: rotate(-12deg);
+        }
+      }
+
+      .bouche {
+        display: inline-block;
+        width: 16px;
+        transform: translateY(-1px);
+      }
+    }
+
+    .down10 {
+      position: relative;
+      top: 10px;
+    }
+    .down7 {
+      position: relative;
+      top: 7px;
+    }
+    .down5 {
+      position: relative;
+      top: 5px;
+    }
+    .down3 {
+      position: relative;
+      top: 3px;
+    }
+    .down05 {
+      position: relative;
+      top: -5px;
+    }
+
+
+    &:hover{
+      .face{
+        left: 0px;
+        transition: 0.3s;
+      }
+    }
+
+
+  }
+}
+
+@keyframes cligniote {
+  0% {
+    transform: scaleY(1);
+  }
+  10% {
+    transform: scaleY(0);
+  }
+  13% {
+    transform: scaleY(1);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}

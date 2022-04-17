@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+/**
+Thin 100
+Extra-light 200
+Light 300
+Regular 400
+Medium 500
+Semi-bold 600
+Bold 700
+Extra-bold 800
+Black 900
+**/
+.body {
+  margin: 0 auto;
+  padding: 0 auto;
+  width: 100%;
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+* {
+  outline: none;
+  scroll-behavior: smooth;
+}
+
+/*** scroollbar ***/
+*::-webkit-scrollbar {
+  width: 0px;
+  background: rgba(0, 0, 0, 0) 0% 0% no-repeat padding-box;
+}
+
+*::-webkit-scrollbar-button {
+  background: rbga(0, 0, 0, 0);
+}
+
+*::-webkit-scrollbar-track-piece {
+  width: 0px;
+}
+
+*::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px black;
+          box-shadow: inset 0 0 6px black;
+  border: none;
+  width: 0px;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+
+a :hover {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  background: #414141;
+}
+
+.emoji_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.emoji_container .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.emoji_container .item:nth-child(1) {
+  background: linear-gradient(25deg, #7a4833 0%, #ff3c27 0%, #ff8254 100%);
+}
+
+.emoji_container .item:nth-child(2) {
+  background: linear-gradient(6deg, #7a4833 0%, #ff5628 0%, #ffb054 100%);
+}
+
+.emoji_container .item:nth-child(3) {
+  background: linear-gradient(6deg, #7a4833 0%, #ffaa3f 0%, #ffd27d 100%);
+}
+
+.emoji_container .item:nth-child(4) {
+  background: linear-gradient(6deg, #7a4833 0%, #ffc428 0%, #ffe253 100%);
+}
+
+.emoji_container .item:nth-child(5) {
+  background: linear-gradient(6deg, #7a4833 0%, #ffe731 0%, #fff36a 100%);
+}
+
+.emoji_container .item .face {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 65%;
+  position: relative;
+  left: 4px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.emoji_container .item .face .eyes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.emoji_container .item .face .eyes .eye {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #00232b;
+  position: relative;
+  -webkit-animation: cligniote 3s linear infinite;
+          animation: cligniote 3s linear infinite;
+}
+
+.emoji_container .item .face .eyes .sousil_left::after {
+  content: " ";
+  width: 12px;
+  height: 4px;
+  background: #00232b;
+  position: absolute;
+  top: -6px;
+}
+
+.emoji_container .item .face .eyes .sousil_right::after {
+  content: " ";
+  width: 12px;
+  height: 4px;
+  background: #00232b;
+  position: absolute;
+  top: -6px;
+}
+
+.emoji_container .item .face .eyes .sousil_left_r::after {
+  -webkit-transform: rotate(12deg);
+          transform: rotate(12deg);
+}
+
+.emoji_container .item .face .eyes .sousil_right_r::after {
+  -webkit-transform: rotate(-12deg);
+          transform: rotate(-12deg);
+}
+
+.emoji_container .item .face .bouche {
+  display: inline-block;
+  width: 16px;
+  -webkit-transform: translateY(-1px);
+          transform: translateY(-1px);
+}
+
+.emoji_container .item .down10 {
+  position: relative;
+  top: 10px;
+}
+
+.emoji_container .item .down7 {
+  position: relative;
+  top: 7px;
+}
+
+.emoji_container .item .down5 {
+  position: relative;
+  top: 5px;
+}
+
+.emoji_container .item .down3 {
+  position: relative;
+  top: 3px;
+}
+
+.emoji_container .item .down05 {
+  position: relative;
+  top: -5px;
+}
+
+.emoji_container .item:hover .face {
+  left: 0px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+@-webkit-keyframes cligniote {
+  0% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+  10% {
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+  }
+  13% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+}
+
+@keyframes cligniote {
+  0% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+  10% {
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+  }
+  13% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+}
