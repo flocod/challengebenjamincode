@@ -163,6 +163,31 @@ a :hover {
           animation: cligniote 3s linear infinite;
 }
 
+.emoji_container .item .face .eyes .eye1 {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+.emoji_container .item .face .eyes .eye2 {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.emoji_container .item .face .eyes .eye3 {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+.emoji_container .item .face .eyes .eye4 {
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
+}
+
+.emoji_container .item .face .eyes .eye5 {
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+
 .emoji_container .item .face .eyes .sousil_left::after {
   content: " ";
   width: 12px;

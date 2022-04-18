@@ -153,6 +153,22 @@ a {
           animation: cligniote 3s linear infinite;
         }
 
+        .eye1{
+          animation-delay: 0s;
+        }
+        .eye2{
+          animation-delay: 1s;
+        }
+        .eye3{
+          animation-delay: 2s;
+        }
+        .eye4{
+          animation-delay: 2.5s;
+        }
+        .eye5{
+          animation-delay: 1.5s;
+        }
+
         .sousil_left::after {
           content: " ";
           width: 12px;
